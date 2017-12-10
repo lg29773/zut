@@ -2,7 +2,7 @@
 
 <form method="POST" action="/base64/convert" enctype="multipart/form-data"  >
     {{csrf_field()}}
-    <input type="hidden" name="code">
+    <input type="hidden" name="type" value="code">
     <input type="file" name="fileinput" id="fileinput" />
     <button type="send">Wgraj</button>
 </form>
@@ -11,7 +11,7 @@
 
 <form method="POST" action="/base64/convert" enctype="multipart/form-data"  >
     {{csrf_field()}}
-    <input type="hidden" name="code">
+    <input type="hidden"  name="type" value="decode">
     <input type="file" name="fileinput" id="fileinput" />
     <button type="send">Wgraj</button>
 </form>
