@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f9db8dcced1b0a11ae6da217060dd4c4",
-    "content-hash": "2273d028895edc12393171b5fcb916fc",
+    "hash": "51c5fd85d7028b066e04e008cec5b427",
+    "content-hash": "0d149153f421575673eda31c95f25ea7",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1002,6 +1002,58 @@
                 "random"
             ],
             "time": "2017-09-27 21:40:39"
+        },
+        {
+            "name": "php-imap/php-imap",
+            "version": "3.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barbushin/php-imap.git",
+                "reference": "656ec7bc4fea6ea9825e68742f1b0f96b7928325"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barbushin/php-imap/zipball/656ec7bc4fea6ea9825e68742f1b0f96b7928325",
+                "reference": "656ec7bc4fea6ea9825e68742f1b0f96b7928325",
+                "shasum": ""
+            },
+            "require": {
+                "ext-imap": "*",
+                "php": ">=5.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpImap\\": "src/PhpImap"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Barbushin",
+                    "email": "barbushin@gmail.com",
+                    "homepage": "http://linkedin.com/in/barbushin"
+                }
+            ],
+            "description": "Manage mailboxes, filter/get/delete emails in PHP (supports IMAP/POP3/NNTP)",
+            "homepage": "https://github.com/barbushin/php-imap",
+            "keywords": [
+                "imap",
+                "mail",
+                "mailbox",
+                "php",
+                "pop3",
+                "receive emails"
+            ],
+            "time": "2017-11-30 05:07:20"
         },
         {
             "name": "psr/container",
