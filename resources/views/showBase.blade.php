@@ -21,7 +21,7 @@
 
 @foreach($files as $data)
         @if(($data != "." ) AND ($data !=".."))
-        <li><a target="_blank" href="/files/{{$data}}">{{$data}}</a></li>
+        <li><a target="_blank" href="/public/files/{{$data}}">{{$data}}</a></li>
         @endif
 @endforeach
 </ul>
@@ -32,7 +32,7 @@
 
     @foreach($files2 as $data)
         @if(($data != "." ) AND ($data !=".."))
-            <li><a target="_blank" href="/files_enc/{{$data}}">{{$data}}</a></li>
+            <li><a target="_blank" href="/public/files_enc/{{$data}}">{{$data}}</a></li>
         @endif
     @endforeach
 </ul>

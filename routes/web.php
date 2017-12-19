@@ -13,6 +13,8 @@
 Route::get('/base64','Base64ViewController@index');
 Route::resource('/base64/convert','CRUD\Base64Controller');
 Route::get('/email','mailController@showEmail');
+Route::resource('/ftp','ftpController');
+
 Route::post('/send_email','mailController@sendEmail');
 
 Route::get('/', function () {

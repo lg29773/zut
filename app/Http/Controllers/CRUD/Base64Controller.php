@@ -45,10 +45,10 @@ class Base64Controller extends Controller
 
                if($request->type == "code"){
                    $code = $this->code(\Illuminate\Support\Facades\File::get($request->file('fileinput')));
-                   \Illuminate\Support\Facades\File::put("files/".Carbon::now()."_coded.txt",$code);
+                   \Illuminate\Support\Facades\File::put("public/files/".Carbon::now()."_coded.txt",$code);
                }else{
                    $code = base64_decode(\Illuminate\Support\Facades\File::get($request->file('fileinput')));
-                   \Illuminate\Support\Facades\File::put("files_enc/".Carbon::now()."_encoded.txt",$code);
+                   \Illuminate\Support\Facades\File::put("public/files_enc/".Carbon::now()."_encoded.txt",$code);
                }
 
 

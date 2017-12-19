@@ -14,6 +14,7 @@ class mailController extends Controller
 
 
     public function showEmail(){
+        var_dump(__DIR__);
         $mailbox = new Mailbox('{'.env('MAIL_HOST').'}'.'INBOX', env('MAIL_USERNAME'), env('MAIL_PASSWORD'), __DIR__,'UTF-8');
         $mailbox_id = $mailbox->searchMailbox('ALL');
         $mail = $mailbox->getMail( $mailbox_id[sizeof(  $mailbox_id ) - 1]);
